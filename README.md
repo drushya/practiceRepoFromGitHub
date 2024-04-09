@@ -1,0 +1,2 @@
+# practiceRepoFromGitHub
+to learn git
