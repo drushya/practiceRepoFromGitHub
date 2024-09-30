@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Issue
+
+# Controls when the workflow will run
+on: issue
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  first-job:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Issue details
+        run: echo "Run lint scripts"
+
+      # Runs a set of commands using the runners shell
+      - name: Run test scripts
+        run: echo "${{ github.event.issue.title }}"
+      
